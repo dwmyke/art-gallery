@@ -1,0 +1,57 @@
+* {
+  box-sizing:border-box
+}
+
+body {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  text-shadow: 2px 2px 8px #FF0000;
+  color: silver;
+  margin:0;
+  padding:0;
+  text-align: center;
+  background-color: #8a5361;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  overflow: hidden;
+}
+
+article {
+  padding:2em;
+  
+}
+
+article h1 {
+  font-size:48px;
+}
+
+#gallery {
+  background: linear-gradient(#e2e4de, #c0c0c0);
+  min-height:250px;
+  width: 5076px;
+  display:flex;
+  justify-content: center;
+  overflow-x: scroll;
+  padding: 0 50px;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+#gallery img {
+  border: 25px lightslategray groove;
+  padding: 25px;
+  margin: 80px 25px;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, .75);
+  background: linear-gradient(#f2f2f2, #f7f7f7);
+/*   transform: rotate(.325deg); */
+}
+
+#gallery img: nth-child (odd) {
+/*   transform: rotate(-.325deg); */
+}
